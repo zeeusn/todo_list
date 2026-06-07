@@ -185,13 +185,43 @@ select:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  min-height: 46px;
-  border: 0;
+  gap: 10px;
+  min-height: 50px;
+  border: 1px solid #173f3a;
   border-radius: 8px;
-  background: #0f6b5b;
+  background: #173f3a;
   color: white;
   font-weight: 800;
+  box-shadow:
+    0 10px 20px rgba(23, 63, 58, 0.16),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.18);
+  transition:
+    background 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.primary-button svg {
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 999px;
+  background: #e8f5ef;
+  color: #0f6b5b;
+}
+
+.primary-button:hover {
+  background: #102f2b;
+  box-shadow:
+    0 12px 24px rgba(23, 63, 58, 0.2),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.primary-button:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 7px 16px rgba(23, 63, 58, 0.16),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .task-board {

@@ -271,7 +271,7 @@ function App() {
 
           <button className="primary-button" type="submit">
             <Plus size={18} />
-            添加任务
+            <span>创建提醒</span>
           </button>
         </form>
 
