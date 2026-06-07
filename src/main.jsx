@@ -213,7 +213,7 @@ function App() {
             <ListChecks size={28} />
             <span>待办提醒</span>
           </div>
-          <h1>把下一件事稳稳接住</h1>
+          <h1>今日待办提醒</h1>
         </div>
         <div className="summary-grid" aria-label="任务统计">
           <Stat label="进行中" value={stats.active} />
